@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+</head>
+<body>
+    <h1>getElementById();</h1>
+
+    <p id="one">Here is some text.</p>
+    <p>here is somme more paragraph</p>
+    <p>here is somme more paragraph</p>
+    <p>here is somme more paragraph</p>
+
+
+
+    <script>
+
+        document.getElementById("one").style.color = "red";
+        var ps = document.getElementsByTagName('p');
+        console.log(myParagraphs);
+
+        for( var i=0; i < ps.length;i++){
+            ps[i].style.color= "red";
+
+        }
+        
+    </script>
+    
+</body>
+</html>
