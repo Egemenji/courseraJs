@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Challenges</title>
+</head>
+<body>
+    <h1>Challenge 10</h1>
+
+    <script>
+
+        // var name = prompt("Gimme a color", "")
+        // var colorsP = ["red","blue","yellow"]
+        // var colorsS = ["orange","green","purple"]
+
+        // for(var i = 0 ; i < 3 ; i++){
+        //         if(name == colorsP[i]){
+        //             console.log("That's is a Primary Color");
+        //             break;
+        //         }
+        //         else if(name == colorsS[i]){
+        //             console.log("This is a Secondary Color");
+        //             break;     
+        //         }
+        //         else{
+        //             console.log("Just some color");
+        //             break;
+        //         }
+        // }
+
+        var foods = ["cheese","chicken","grapes","hamburgers"];
+
+        function randomInt ( min, max ){
+
+            // var numOfValues = max - min + 1;
+            // var randomNum = Math.random();
+            // var randomVal = randomNum * numOfValues;
+            // var roundedRandomVal = Math.floor(randomVal);
+            // var finalNum = min + roundedRandomVal;
+
+            // console.log(randomNum); 
+            // console.log(numOfValues);
+            // console.log(randomVal);
+            // console.log(roundedRandomVal);
+            // console.log( finalNum );
+
+            //creating a random integer from min and max.
+
+            return Math.floor((max - min + 1) * Math.random() + min);
+
+        }
+
+        console.log(foods [randomInt(0, 3)]);
+
+
+        var greeting = function(){
+
+            var name = prompt("Please tell me your name", "");
+
+            console.log(`Hello ${name}, how are you today`);
+        }
+        greeting();
+
+        var hiF = function(){
+
+            console.log("hello from the function!")
+        }
+        hiF();
+
+
+
+
+
+
+
+
+    
+    </script>
+    
+</body>
+</html>

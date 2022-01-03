@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Challenges</title>
+</head>
+<body>
+    <h1>Challenge 16</h1>
+
+    <script>
+
+
+        var yourName = prompt("What's your name?", "");
+        var foods = ["chicken", "apple", "pasta", "cake", "banana"];
+
+        function hello(name){
+
+            var greeting;
+
+            if (name == "null" || name == ""){
+            greeting = "You don't tell me!";
+        }
+        else{
+            greeting =`Hello ${name}, and welcome!`;
+        }
+        return greeting;
+    }
+
+         function randomInt ( min, max ){
+            return Math.floor((max - min + 1) * Math.random() )+ min;
+        }
+
+        function hospitality(name, gift){
+
+            console.log(hello(name));
+            var randomGift = gift[ randomInt(0, gift.length-1) ];
+            console.log(randomInt(0,3));
+            console.log(randomGift);
+          
+            console.log(`${name} would you like some ${randomGift}?`);
+            
+        }
+    
+        hospitality(yourName, foods);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    
+    // var red = true;
+    // var blue = false;
+    // var green;
+    // var myNum = 5;
+    // var otherNum = 6;
+    // var notNum = "5";
+
+    // if(name){
+    //     console.log("This is true");
+    // }
+    // else{
+    //     console.log("This is false");
+    // };
+
+    // var colors = ['red', 'green', 'blue', 'yellow'];
+    // var selectedColor = colors[];
+
+    // switch(selectedColor){
+    // case "red":console.log('the color is red');
+    //     break;
+    // case "green":console.log('the color is green'); 
+    //     break;
+    // case "blue":console.log('the color is blue'); 
+    //     break;
+    // case "yellow":console.log('the color is yellow');
+    //     break;
+    //     default: console.log("There was an error");
+    // };
+
+
+
+    // var goodMood = true;
+    // var gotSleep = true;
+
+    // if( goodMood && gotSleep ){
+    //     console.log("today is a good day");
+    // }
+    // else {
+    //     console.log("I am grumpy");
+    // }
+
+    // var gotBreakfast = true;
+    // var gotLunch = true;
+    // var gotDinner = false;
+
+    // if( gotBreakfast || gotLunch || gotDinner){
+    //     console.log("I am not starving");
+    // }
+    // else {
+    //     console.log("acımdan ölüyom da");
+    // }
+
+    // a = [1,2,3,4,5,1,13,123,141,2313,];
+
+    // for (let index = 0; index < 10 ; index++) {
+    //     const element = a[index];
+    //     console.log("index is", index);
+    //    console.log(element);
+    // }
+
+    // var food = ["grapes", "cheese", "bread", "olives"];
+
+    // for( var eachItem of food ){
+    //     console.log(eachItem);
+    // }
+
+//     const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "";
+// for (let i = 0; i < cars.length; i++) {
+//   text += cars[i] + "/n"  ;
+// }
+
+// console.log(text);
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 2;
+// let len = cars.length;
+// let text = "";
+
+// for (; i < len; i++) {
+//   text += cars[i] + "<br>";
+//   console.log(text, i);
+// }
+
+var myString = "I am really hungry for some";
+console.log(myString);
+var myUpperString = myString.toUpperCase();
+console.log(myUpperString);
+
+var reallyLocation = myString.search('really');
+console.log(reallyLocation);
+
+var specialWord = myString.substr(reallyLocation, 6);
+specialWord = specialWord.toUpperCase();
+console.log(specialWord);
+
+var newString = myString.replace('really', specialWord)
+console.log(newString);
+
+
+
+
+var foods = ['cheese', 'pie', 'breakfast', 'lunch'];
+// console.log(` ${myString} ${foods[0]}`);
+
+
+    for(var i=0; i < foods.length; i++){
+
+    var remainder = i % 2; 
+
+
+    if(remainder === 0){
+        var foodUpper = foods[i].toUpperCase();
+        console.log(` ${myString} ${foodUpper}`);
+    }
+    else{
+        console.log(` ${myString} ${foods[i]}`);
+
+    }
+
+    }
+
+    
+    var myText = 'There should be some';
+    var sweets = ['cookies', 'cake', 'biscuits', 'fruits', 'sugar']
+
+    for(var i=0; i < sweets.length; i++){
+    var remainder = i % 2 
+    // console.log(sweets[i]);
+
+    if(remainder === 0 ){
+      var sweetsUp = sweets[i].toUpperCase();
+             console.log(`${myText} ${sweetsUp}`);
+    }
+    else{
+    console.log(`${myText} ${sweets[i]}`);
+    }}
+    
+
+</script>
